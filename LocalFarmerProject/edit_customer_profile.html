@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Customer Profile</title>
+    <link rel="stylesheet" href="edit_customer_profile_styles.css">
+</head>
+<body>
+    <!-- Navbar Placeholder -->
+    <div id="navbar"></div>
+    
+    <!-- Edit Profile Form -->
+    <section class="edit-profile-container">
+        <h1>Edit Profile</h1>
+        <form id="editProfileForm" class="profile-form">
+            <label for="profile-image">Change Profile Picture:</label>
+            <input type="file" id="profile-image" name="profile-image" accept="image/*">
+            
+            <label for="customer-phone">Phone Number:</label>
+            <input type="text" id="customer-phone" name="customer-phone" placeholder="Enter your phone number">
+
+            <h2>Favorite Farmers:</h2>
+            <div id="favoriteFarmersContainer" class="favorite-farmers"></div>
+            
+            <div class="form-actions">
+                <button type="submit" class="btn">Save Changes</button>
+                <a href="customer_profile.html" class="btn">Back to Profile</a>
+            </div>
+        </form>
+    </section>
+
+    <!-- Back to Home Page -->
+    <div class="back-home">
+        <a href="customer_farmer_home_page.html">Back to home page</a>
+    </div>
+
+    <!-- Footer Placeholder -->
+    <div id="footer"></div>
+    
+    <script src="loadTemplates.js"></script>
+    <script src="edit_customer_profile.js"></script>
+</body>
+</html>
