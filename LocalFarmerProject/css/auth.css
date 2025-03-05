@@ -1,0 +1,93 @@
+
+.auth-page {
+    background: url('../images/background1.webp') no-repeat center center fixed;
+    background-size: cover;
+}
+
+
+
+.auth-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 100px 20px; 
+    box-sizing: border-box;
+    overflow-y: auto; 
+}
+
+/* Login & Registration Box Styling */
+.auth-box {
+    background:rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    margin-bottom: 50px; 
+}
+
+
+.auth-box h2 {
+    color: white;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.auth-box label {
+    display: block;
+    text-align: left;
+    color: white;
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+/* Input fields */
+.auth-box input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 12px;
+    font-size: 1rem;
+    box-sizing: border-box;
+    background: rgba(255, 255, 255, 0.9);
+    color: black;
+}
+
+
+.auth-box .btn {
+    width: 50%; 
+    margin-top: 10px; 
+}
+
+.registration-form {
+    display: none; /* Hide forms initially */
+}
+
+.registration-form.hidden {
+    display: none; /* Ensure hidden class works */
+}
+
+.registration-form.visible {
+    display: block; /* Show the form when selected */
+}
+
+#roleSelect {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background: white;
+    color: black;
+    outline: none;
+    cursor: pointer;
+    transition: border 0.3s ease-in-out;
+}
+
+#roleSelect:hover, #roleSelect:focus {
+    border-color: #ff9800; 
+}

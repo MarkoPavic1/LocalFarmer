@@ -1,0 +1,66 @@
+
+.profile-container {
+    text-align: center;
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 10px 0;
+}
+
+
+.contact-info, .description, .location {
+    text-align: left;
+    margin-top: 20px;
+}
+
+
+.products-container {
+    max-width: 1200px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+
+.back-home {
+    text-align: center;
+    margin: 20px;
+    padding-bottom: 100px;
+}
+
+.back-home a {
+    display: inline-block;
+    padding: 10px 16px;
+    background: #ff9800;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.back-home a:hover {
+    background: #e68900;
+}
+
+.profile-page {
+    color: black;
+}
+
+
+.profile-container h1,
+.profile-container h3,
+.profile-container p,
+.products-container h2 {
+    color: black;
+}
+
+.profile-container h1{
+    padding-top: 50px;
+}

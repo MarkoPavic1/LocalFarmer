@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Farmer Profile</title>
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/forms.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/footer.css">
+</head>
+<body class="main-content">
+    <!-- Navbar Placeholder -->
+    <div id="navbar"></div>
+
+    <!-- Edit Profile Form Section -->
+    <main class="form-container">
+        <div class="form-box">
+            <h1>Edit Profile</h1>
+            <form id="editFarmerForm">
+                <label for="profile-image">Change Profile Picture:</label>
+                <input type="file" id="profile-image" name="profile-image" accept="image/*">
+
+                <label for="farmer-name">Name:</label>
+                <input type="text" id="farmer-name" name="farmer-name" disabled>
+
+                <label for="farmer-email">Email:</label>
+                <input type="email" id="farmer-email" name="farmer-email" disabled>
+
+                <label for="farmer-phone">Phone Number:</label>
+                <input type="text" id="farmer-phone" name="farmer-phone">
+
+                <label for="farmer-description">Farm Description:</label>
+                <textarea id="farmer-description" name="farmer-description" rows="4"></textarea>
+
+                <label for="farmer-location">Location:</label>
+                <input type="text" id="farmer-location" name="farmer-location">
+
+                <div class="form-actions">
+                    <button type="submit" class="btn">Save Changes</button>
+                    <a href="farmer_own_profile.html" class="btn secondary-btn">Back to Profile</a>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <!-- Footer Placeholder -->
+    <div id="footer"></div>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/editFarmerProfile.js"></script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+/* Navbar Container */
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 10px 30px;
+    background: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 60px;
+    box-sizing: border-box;
+}
+
+
+.logo img {
+    height: 50px; 
+    width: auto;
+    max-width: 150px;
+    border-radius: 100px;
+}
+
+
+.nav-buttons {
+    display: flex;
+    gap: 15px; 
+}
+
+.nav-buttons .btn {
+    padding: 10px 16px;
+    font-size: 16px;
+}

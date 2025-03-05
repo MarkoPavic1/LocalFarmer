@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Farmer - Registration</title>
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/auth.css">
+</head>
+<body class="auth-page">
+    <!-- Navbar Placeholder -->
+    <div id="navbar"></div>
+
+    <!-- Registration Section -->
+    <main class="auth-container">
+        <div class="auth-box">
+            <h2>Register</h2>
+
+            <!-- Role Selection -->
+            <label for="role">Register as:</label>
+            <select id="roleSelect">
+                <option value="">-- Select Role --</option>
+                <option value="customer">Customer</option>
+                <option value="farmer">Farmer</option>
+            </select>
+
+            <!-- Customer Registration Form -->
+            <form id="customerForm" class="registration-form hidden">
+                <label for="customerName">Name:</label>
+                <input type="text" id="customerName" required>
+
+                <label for="customerSurname">Surname:</label>
+                <input type="text" id="customerSurname" required>
+
+                <label for="customerImage">Profile Image:</label>
+                <input type="file" id="customerImage" accept="image/*">
+
+                <label for="customerEmail">Email:</label>
+                <input type="email" id="customerEmail" required>
+
+                <label for="customerPhone">Phone:</label>
+                <input type="text" id="customerPhone">
+
+                <label for="customerLocation">Location:</label>
+                <input type="text" id="customerLocation">
+
+                <label for="customerPassword">Password:</label>
+                <input type="password" id="customerPassword" required>
+
+                <label for="customerConfirmPassword">Confirm Password:</label>
+                <input type="password" id="customerConfirmPassword" required>
+
+                <button type="submit" class="btn">Register as Customer</button>
+            </form>
+
+            <!-- Farmer Registration Form -->
+            <form id="farmerForm" class="registration-form hidden">
+                <label for="farmerName">Name:</label>
+                <input type="text" id="farmerName" required>
+
+                <label for="farmerSurname">Surname:</label>
+                <input type="text" id="farmerSurname" required>
+
+                <label for="farmerImage">Profile Image:</label>
+                <input type="file" id="farmerImage" accept="image/*">
+
+                <label for="farmerEmail">Email:</label>
+                <input type="email" id="farmerEmail" required>
+
+                <label for="farmerPhone">Phone:</label>
+                <input type="text" id="farmerPhone">
+
+                <label for="farmerLocation">Location:</label>
+                <input type="text" id="farmerLocation">
+
+                <label for="farmerDescription">Farm Description:</label>
+                <textarea id="farmerDescription"></textarea>
+
+                <label for="farmerPassword">Password:</label>
+                <input type="password" id="farmerPassword" required>
+
+                <label for="farmerConfirmPassword">Confirm Password:</label>
+                <input type="password" id="farmerConfirmPassword" required>
+
+                <button type="submit" class="btn">Register as Farmer</button>
+            </form>
+
+            <p id="errorMessage" class="error-message"></p>
+        </div>
+    </main>
+
+    <!-- Footer Placeholder -->
+    <div id="footer"></div>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/auth.js"></script>
+</body>
+</html>

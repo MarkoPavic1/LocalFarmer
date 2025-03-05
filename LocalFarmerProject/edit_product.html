@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Product</title>
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/forms.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/footer.css">
+</head>
+<body class="main-content">
+    <!-- Navbar Placeholder -->
+    <div id="navbar"></div>
+    
+    <!-- Edit Product Form Section -->
+    <main class="form-container">
+        <div class="form-box">
+            <h1>Edit Product</h1>
+            <form id="editProductForm">
+                <label for="product-name">Product Name:</label>
+                <input type="text" id="product-name" name="product-name" required>
+
+                <label for="product-description">Description:</label>
+                <textarea id="product-description" name="product-description" rows="4" required></textarea>
+                
+                <label for="product-price">Price:</label>
+                <input type="text" id="product-price" name="product-price" required>
+                
+                <label for="product-quantity">Stock Quantity:</label>
+                <input type="text" id="product-quantity" name="product-quantity" required>
+
+                <div class="form-actions">
+                    <button type="submit" class="btn">Save Changes</button>
+                    <a href="farmer_own_profile.html" class="btn secondary-btn">Cancel</a>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <!-- Footer Placeholder -->
+    <div id="footer"></div>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/editProduct.js"></script>
+</body>
+</html>
